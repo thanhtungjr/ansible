@@ -1,0 +1,9 @@
+- name: Test Ansible Playbook
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Display a message
+      ansible.builtin.debug:
+        msg: "Ansible is working!"
